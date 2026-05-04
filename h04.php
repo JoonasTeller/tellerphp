@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Armin on alkohoolik</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>harjutus 04</h1>
-    <form action="" method="get">
-        Aasta: <input type="number" name="aasta"><br>
-        <input type="submit" value="Leia juubel">
-    </form>
-    <?php
-        if (!empty($_GET['aasta'])) {
-            $aasta = $_GET['aasta']
-            $vanus = 2026 - $aasta
-            if ($vanus % 5  == 0) {
-                echo "Sul on juubeliaasta<br>";
+        <form action="">
+            Lisa punkti: <input type="text" name="punktid" >
+            <input type="submit" value="hinda"><br>
+        </form>
+        <?php 
+            if (!empty($_GET['punktid']) && is_numeric($_GET['$punktid'])) {
+            $punktid = $_GET['punktid'];
+                switch($punktid){ 
+	            case ($punktid >= 10): echo 'Arv on liiga väike'; 
+	            break; 
+	            case ($punktid >= 5 && $punktid <= 9): echo 'TEHTUD!'; 
+	            break; 
+                case ($punktid < 5 && $punktid >= 0): echo 'KASIN!'; 
+	            break; 
+	            default: echo 'SISESTA OMA PUNKTID!'; 
             }
-        }
+        } 
     ?>
 </body>
 </html>
