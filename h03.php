@@ -6,7 +6,7 @@
     <title>Armin on alkohoolik</title>
 </head>
 <body>
-    <h1>harjutus 02</h1>
+    <h1>harjutus 03 xD</h1>
     <form action="" method="get">
         a: <input type="number" name="a"><br>
         b: <input type="number" name="b"><br>
