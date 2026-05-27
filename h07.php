@@ -11,7 +11,7 @@
 
     <?php
 	    function tervita(){
-		    return "Tere päiksekesekene";	
+		    return "Tere päiksekesekene!";	
 	    }
 	    echo tervita();
     ?>

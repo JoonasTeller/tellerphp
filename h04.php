@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,18 +12,17 @@
         </form>
         <?php 
             if (!empty($_GET['punktid']) && is_numeric($_GET['$punktid'])) {
-            $punktid = $_GET['punktid'];
-                switch($punktid){ 
-	            case ($punktid >= 10): echo 'Arv on liiga väike'; 
-	            break; 
-	            case ($punktid >= 5 && $punktid <= 9): echo 'TEHTUD!'; 
-	            break; 
-                case ($punktid < 5 && $punktid >= 0): echo 'KASIN!'; 
-	            break; 
-	            default: echo 'SISESTA OMA PUNKTID!'; 
+                $punktid = $_GET['punktid'];
+                    switch($punktid){ 
+	                case ($punktid >= 10): echo 'Arv on liiga väike'; 
+	                break; 
+	                case ($punktid >= 5 && $punktid <= 9): echo 'TEHTUD!'; 
+	                break; 
+                    case ($punktid < 5 && $punktid >= 0): echo 'KASIN!'; 
+	                break; 
+	                default: echo 'SISESTA OMA PUNKTID!'; 
             }
         } 
     ?>
 </body>
 </html>
->>>>>>> ab9176a2d51cd6ba83c47cc92012b16b705c97c5
